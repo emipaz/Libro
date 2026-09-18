@@ -917,10 +917,19 @@ n = [1, 9, 3, 4, 6, 12]
 print(f"La suma es {sum(n)} y el promedio es {sum(n) / len(n):.2f}")
 ```
 
-**Forma de depuración rápida:** con `{variable=}` se imprime el nombre de la variable y su valor:
+**Forma de depuración rápida:** con `{variable=}` se imprime el nombre de la variable **y** su valor. Es el arma secreta para depurar: te ahorra el "espera, ¿qué tenía `edad`?":
 
 ```python
 print(f"{nombre=} {edad=}")   # nombre='Emiliano' edad=45
+```
+
+> **Tip de debug — la `=` dentro de las llaves:** la sintaxis `{expr=}` imprime la expresión textual, un `=` y su resultado. No es solo para variables simples: funciona con **expresiones enteras** (`{a + b = }` → `a + b = 7`), admite **formato** a la derecha (`{pi=:.2f}` → `pi=3.14`) y, adelanto de la Parte VI, también con **atributos de objetos** (`{objeto.atributo=}`). Poné un espacio antes del `=` para que el `=` quede separado a la izquierda también (más limpio). Es la versión moderna del `print(x, x*2, x/2)` de toda la vida, ideal cuando estás en el "¿por qué da esto?" investigando:
+
+```python
+a, b = 3, 4
+print(f"{a + b = }")     # a + b = 7
+pi = 3.14159
+print(f"{pi=:.2f}")      # pi=3.14
 ```
 
 ### Caracteres de escape
