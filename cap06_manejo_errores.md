@@ -179,7 +179,7 @@ La tabla de las combinaciones posibles:
 
 > **Importante:** `else` y `finally` **no** son intercambiables. El `else` corre solo cuando todo salió bien: es el lugar natural para el código que *usa el resultado* del `try`. El `finally` corre bajo todas las circunstancias: es el lugar para **liberar recursos** ("pase lo que pase, cerrá esto"). Con esto ya viste el `else` en todos los flujos que Python permite — `if`, `while`, `for`, `try` — y el `match`/`case` con su `case _` es el único que no lo tiene.
 
-El caso de uso clásico del `finally` es cuando abrís un recurso y tenés que asegurarte de cerrarlo **pase lo que pase** (en serio lo vas a explotar en la Parte VIII, con archivos):
+El caso de uso clásico del `finally` es cuando abrís un recurso y tenés que asegurarte de cerrarlo **pase lo que pase** (en serio lo vas a explotar en el capítulo 27, con archivos):
 
 ```python
 f = open("ejemplo.txt")

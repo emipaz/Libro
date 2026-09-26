@@ -249,7 +249,7 @@ La recursión **brilla** cuando el problema (o los datos) son *recursivos por na
 
 - **Listas anidadas** (capítulo 5): aplanar una lista de listas. Con una comprensión aplanás *un* nivel; con recursión, profundidad arbitraria (ya viene, sección 9).
 - **Árboles**: carpetas de carpetas, "organigrama", jerarquías. En la **Parte VI (POO)** y en las estructuras clásicas vas a modelar árboles donde la recursión es la herramienta natural.
-- **El sistema de archivos**: una carpeta *contiene* carpetas — el mismo problema, más chico. Un mini-ejemplo real, con herramientas que la Parte VIII (archivos) va a estudiar en serio:
+- **El sistema de archivos**: una carpeta *contiene* carpetas — el mismo problema, más chico. Un mini-ejemplo real, con herramientas que el capítulo 27 va a estudiar en serio:
 
 ```python
 import os
@@ -266,7 +266,7 @@ def listar(ruta: str) -> None:
 listar("C:/Users/alguien/Proyectos")
 ```
 
-Tres funciones nuevas, y las glosamos para que no quede nada en la sombra: `os.listdir(ruta)` devuelve la **lista de nombres** que hay dentro de una carpeta; `os.path.join(ruta, nombre)` **arma la ruta completa** combinando la carpeta y el nombre; `os.path.isdir(camino)` responde **"¿esto es una carpeta?"** con `True` o `False`. (Las barras `/` funcionan igual en Windows.) Probalo sobre una carpeta con pocas cosas. Y una curiosidad de la biblioteca estándar: existe `os.walk`, que hace este recorrido ya listo — lo vas a conocer en la Parte VIII.
+Tres funciones nuevas, y las glosamos para que no quede nada en la sombra: `os.listdir(ruta)` devuelve la **lista de nombres** que hay dentro de una carpeta; `os.path.join(ruta, nombre)` **arma la ruta completa** combinando la carpeta y el nombre; `os.path.isdir(camino)` responde **"¿esto es una carpeta?"** con `True` o `False`. (Las barras `/` funcionan igual en Windows.) Probalo sobre una carpeta con pocas cosas. Y una curiosidad de la biblioteca estándar: existe `os.walk`, que hace este recorrido ya listo — lo vas a conocer en el capítulo 27.
 
 > **Dato clave:** la señal de que la recursión es la herramienta correcta es que **la estructura de datos tome la misma forma a cualquier profundidad**: una carpeta contiene carpetas, un árbol tiene hijos que son árboles. Si tu problema no tiene esa forma, la recursión va a pelear en contra — y el bucle gana.
 
@@ -489,7 +489,7 @@ Repasá esta lista antes de seguir:
 - [ ] `factorial`: sirve para **aprender el mecanismo**; en la práctica, bucle o `math.factorial`.
 - [ ] `sum_list` con `match`/`case`: `case []` (base), `case [primero, *resto]` (recursión), `case _` (`ValueError` con `type(datos).__name__`).
 - [ ] El patrón de secuencia acepta listas, tuplas y textos; con `if isinstance(datos, list)` lo restringís.
-- [ ] Recursión brilla con **estructuras recursivas**: listas anidadas, árboles (Parte VI), carpetas (`os.listdir`/`os.path.isdir`/`os.path.join`; `os.walk` en Parte VIII).
+- [ ] Recursión brilla con **estructuras recursivas**: listas anidadas, árboles (Parte VI), carpetas (`os.listdir`/`os.path.isdir`/`os.path.join`; `os.walk` en el capítulo 27).
 - [ ] **Fibonacci ingenuo recalcula** (2.692.537 llamadas para `n=30`); el bucle hace 30 pasos. Su intuición de costos se formaliza más adelante (notación O grande, post-POO).
 - [ ] **Lambda recursiva**: se llama a sí misma a través del nombre del entorno (closure); preferí siempre `def`.
 - [ ] Un **generador** usa `yield`: entrega un valor, **pausa** y **retoma** desde el `yield` siguiente.

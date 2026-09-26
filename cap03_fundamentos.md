@@ -1045,7 +1045,7 @@ chr(65)      # 'A'
 ord("ñ")     # 241
 ```
 
-> **Dato clave:** cuando leas o escribas archivos (lo verás en la Parte VIII), siempre debes **indicar la codificación** (`encoding="utf-8"`). Es la causa de muchísimos errores de caracteres raros que a primera vista parecen "magia negra", y que en realidad son un problema de codificación: bytes interpretados con el código equivocado.
+> **Dato clave:** cuando leas o escribas archivos (lo verás en el capítulo 27), siempre debes **indicar la codificación** (`encoding="utf-8"`). Es la causa de muchísimos errores de caracteres raros que a primera vista parecen "magia negra", y que en realidad son un problema de codificación: bytes interpretados con el código equivocado.
 
 ---
 

@@ -2,7 +2,7 @@
 
 Hasta acá trabajaste con variables que guardan un solo valor: un número, una cadena, un `True` o un `False`. Pero cuando los datos crecen —una lista de precios, los contactos de tu agenda, las notas de un curso— necesitás guardar **muchos valores juntos**. De eso se trata este capítulo: las **estructuras de datos** nativas de Python, es decir, las formas que tiene el lenguaje para agrupar y organizar valores.
 
-No es un capítulo más: es la base que usarás en prácticamente todo el resto del libro. Los `DataFrame` de pandas (Parte IX) son la evolución "de laboratorio" de estas estructuras, y entender bien qué diferencia una lista de un diccionario te va a ahorrar horas de confusión ahí adelante. Además vas a descubrir una herramienta que se vuelve adictiva: las **listas y diccionarios por comprensión**, una forma corta, elegante y muy pythónica de construir colecciones.
+No es un capítulo más: es la base que usarás en prácticamente todo el resto del libro. Los `DataFrame` de pandas, en la parte de análisis de datos del final del libro, son la evolución "de laboratorio" de estas estructuras, y entender bien qué diferencia una lista de un diccionario te va a ahorrar horas de confusión ahí adelante. Además vas a descubrir una herramienta que se vuelve adictiva: las **listas y diccionarios por comprensión**, una forma corta, elegante y muy pythónica de construir colecciones.
 
 ---
 
